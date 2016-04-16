@@ -1,0 +1,11 @@
+<template name="Login">
+    {{#if show }}
+        <div class="LoginSide">
+            <form autocomplete="off">
+                <input type="email" name="email" class = "LoginForm" placeholder="Username / email"/>
+                <input type="password" name="password" class = "LoginForm" placeholder="Password"/>
+                <input type="submit" name="Log In" id="LoginSubmitButton"/>
+            </form>
+        </div>
+    {{/if}}
+</template>

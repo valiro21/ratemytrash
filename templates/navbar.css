@@ -1,0 +1,41 @@
+#MainNavbar {
+    background-color: limegreen;
+    width: 100%;
+}
+
+#UserButtonsNavbar {
+    display: inline-block;
+    margin: 0px;
+    float: right;
+}
+
+#SiteButtonsNavbar {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.navbar_item {
+    display: inline-block;
+}
+
+.navbar_item p {
+    width: 140px;
+    height: 15px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.navbar_item:hover {
+    display: inline-block;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.navbar_item:hover p {
+    color: khaki;
+}
