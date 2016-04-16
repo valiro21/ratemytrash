@@ -1,0 +1,40 @@
+.imagebos {
+
+}
+
+table {
+    align-items: center;
+    width:100%;
+}
+
+@media screen and (max-width: 640px) {
+
+    th {
+        float: left;
+    }
+    tr td{
+        width: 350px;
+        height: 350px;
+        float: left;
+    }
+
+    tr {
+        clear: left;
+    }
+
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+.table_item {
+    text-align: center;
+    padding: 5px;
+
+}
+
+.Table_Title {
+    text-align: center;
+    font-size: 30px;
+}

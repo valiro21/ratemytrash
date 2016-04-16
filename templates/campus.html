@@ -1,0 +1,27 @@
+<template name="Campus">
+
+    <div class="campus">
+        <h1> {{Title}} </h1>
+        <h2> {{Rating}} </h2>
+
+        <table style="width:100%">
+            <tr>
+                <th class="Table_Title">The Good Side</th>
+                <th class="Table_Title">The Bad Size</th>
+
+            </tr>
+            {{#each facuts}}
+                {{>facut this}}
+            {{/each}}
+        </table>
+    </div>
+
+</template>
+
+<template name="facut">
+
+    <tr>
+        <td class="table_item"> <img src="{{ImgG number=Id}}" height="350" width="350"> </td>
+        <td class="table_item"> <img src="{{ImgB number=Id}}" height="350" width="350"> </td>
+    </tr>
+</template>
