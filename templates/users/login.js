@@ -5,11 +5,7 @@ if(Meteor.isClient) {
     Template.Login.helpers({
         get_login_error: function () {
             return Session.get('login_error');
-        },
-        show: function() {
-            if (Meteor.userId())
-                return false;
-            return Session.get('show_login_side')}
+        }
     });
 
     Template.Login.events({
@@ -36,8 +32,10 @@ if(Meteor.isClient) {
                     Session.set ('login_error', true);
                 }
                 else {
-                    Session.set('show_login_side', false);
-                    Session.set ('login_error', true);
+                    Session.set('show_sidebar', false);
+                    Session.set('show_login', false);
+                    Session.set ('login_error', false);
+                    console.log ('ceva');
                 }
             });
         }

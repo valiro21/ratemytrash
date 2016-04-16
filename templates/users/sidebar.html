@@ -1,0 +1,11 @@
+<template name="Sidebar">
+    {{#if show}}
+        <div class="Sidebar">
+        {{#if show_login}}
+            {{> Login}}
+        {{else}}
+            {{> SignUp}}
+        {{/if}}
+    </div>
+    {{/if}}
+</template>
