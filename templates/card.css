@@ -1,5 +1,5 @@
 .card {
-    width: 300px;
+    width: 400px;
     padding: 1.0rem;
     box-shadow: 0 1px 2px #aaa;
     background: white;
@@ -8,6 +8,7 @@
     user-select: none;
     transform-origin: top left;
     text-align: center;
+    display: inline-block;
 }
 
 .map {

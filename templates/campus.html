@@ -21,7 +21,7 @@
 <template name="facut">
 
     <tr>
-        <td class="table_item"> <img src="{{ImgG number=Id}}" height="350" width="350"> </td>
-        <td class="table_item"> <img src="{{ImgB number=Id}}" height="350" width="350"> </td>
+        <td class="table_item" id="table_item_first"> {{>cards Img=(ImgG number=Id) }}</td>
+        <td class="table_item" id="table_item_second"> {{>cards Img=(ImgB number=Id) }}</td>
     </tr>
 </template>

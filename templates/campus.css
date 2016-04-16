@@ -3,7 +3,7 @@
 }
 
 table {
-    align-items: center;
+    text-align:center;
     width:100%;
 }
 
@@ -14,7 +14,7 @@ table {
     }
     tr td{
         width: 350px;
-        height: 350px;
+        height: 400px;
         float: left;
     }
 
@@ -34,7 +34,16 @@ table {
 
 }
 
+#table_item_first {
+
+}
+
+#table_item_second {
+
+}
+
 .Table_Title {
+
     text-align: center;
     font-size: 30px;
 }

@@ -57,7 +57,7 @@ if (Meteor.isClient) {
                 console.log("facuts", facuts);
                 var sad = number.hash.number;
                 console.log("ratinggood", facuts[sad].ImgGood.Rating);
-                var s = 'https://goo.gl/WXnDp4';
+                var s = '//:0';
                 if(facuts[sad].ImgGood.Rating>0)
                     s = facuts[sad].ImgGood.Img;
                 return s;
@@ -65,7 +65,7 @@ if (Meteor.isClient) {
             ImgB: function(number) {
                 var sad = number.hash.number;
                 console.log("ratingbad", facuts[sad].ImgBad.Rating);
-                var s = 'https://goo.gl/WXnDp4';
+                var s = '//:0';
                 if(facuts[sad].ImgBad.Rating<0)
                     s = facuts[sad].ImgBad.Img;
                 return s;
