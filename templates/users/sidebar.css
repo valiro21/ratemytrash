@@ -1,0 +1,9 @@
+.Sidebar {
+    float: right;
+    padding-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: aliceblue;
+    width: 350px;
+    height: 1200px;
+}

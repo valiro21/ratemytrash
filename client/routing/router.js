@@ -10,8 +10,4 @@ if (Meteor.isClient) {
     Router.route('/Top', function () {
         this.render('Top');
     });
-
-    Router.route('/SignUp', function () {
-        this.render('SignUp');
-    });
 }

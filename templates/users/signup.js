@@ -97,6 +97,8 @@ if (Meteor.isClient) {
 
             if (!passwords_different && !is_username_taken && !no_campus && !email_taken) {
                 Meteor.call('register_user', {username:username, email:email, password:password, campus:campus});
+                Session.set('show_sidebar', true);
+                Session.set('show_login', true);
             }
         },
         'keyup #username': function (event) {

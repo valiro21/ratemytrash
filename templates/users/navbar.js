@@ -13,10 +13,12 @@ if (Meteor.isClient) {
     Template.UserNavbar.events({
         'click #Login': function (){
             Session.set ('login_error', false);
-            Session.set('show_login_side', true);
+            Session.set('show_sidebar', true);
+            Session.set('show_login', true);
         },
         'click #SignUp': function () {
-            window.location.href='SignUp';
+            Session.set('show_sidebar', true);
+            Session.set('show_login', false);
         },
         'click #SignOut': function () {
             Meteor.logout();
