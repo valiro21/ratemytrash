@@ -7,18 +7,17 @@
 
 <template name="SiteNavbar">
     <ul id="SiteButtonsNavbar">
-        <li class="navbar_item" name="HomeButton"><p>Best</p></li>
-        <li class="navbar_item" name="GalleryButton"><p>Worst</p></li>
-        <li class="navbar_item" name="GalleryButton"><p>Hot</p></li>
+        <li class="navbar_item" name="HomeButton"><p>Home</p></li>
+        <li class="navbar_item" name="TopButton"><p>Top</p></li>
+        <li class="navbar_item" name="Campuses"><p>Campuses</p></li>
     </ul>
 </template>
 
 <template name="UserNavbar">
     <ul id="UserButtonsNavbar">
-        <li class="navbar_item" name="Campuses"><p>Campuses</p></li>
         {{#if get_user}}
-            <li class="navbar_item" name="UserButton"><p>{{get_user}}</p></li>
-            <li class="navbar_item" name="SignOutButton"><p>Sign Out</p></li>
+            <li class="navbar_item" name="UserButton" id="User"><p>{{get_user}}</p></li>
+            <li class="navbar_item" name="SignOutButton" id="SignOut"><p>Sign Out</p></li>
         {{else}}
             <li class="navbar_item" name="LoginButton" id="Login"><p>Login</p></li>
             <li class="navbar_item" name="SignUpButton" id="SignUp"><p>Sign Up</p></li>

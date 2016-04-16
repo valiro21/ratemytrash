@@ -1,0 +1,36 @@
+.error {
+    display: inline-block;
+    color: red;
+    font-style: italic;
+}
+
+.SignUpForm {
+    margin-left: 10%;
+    width: 260px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    margin-top: 10px;
+    height: 25px;
+    border-radius: 1px;
+    border-color: black;
+}
+
+#SignUpSubmitButton {
+    -webkit-appearance:none;
+    width: 270px;
+    height: 30px;
+    border-radius: 1px;
+    border-color: black;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.SignUpMainForm {
+    margin-top: 20px;
+}
+
+#SignUpSubmitButton:hover {
+    color: khaki;
+    cursor: pointer;
+}
