@@ -1,0 +1,17 @@
+<template name="cards">
+
+    <div class="card">
+        <h1> {{Title}} </h1>
+        <img src="{{Img}}" alt="Nope" height="250" width="250">
+        <hr class="linestyle">
+
+        <form action="action_page.php" method="get">
+            <img id="highlightblack" src="https://goo.gl/gYPnqn" height="40" width="40">
+            <input type="range" id="slider" name="points" min="-10" max="10">
+            <input type="hidden">
+            <img id="highlightyellow" src="http://goo.gl/iEpChp" height="40" width="40">
+        </form>
+
+    </div>
+
+</template>
