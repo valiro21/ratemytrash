@@ -1,0 +1,75 @@
+<template name="SignUp">
+    <form autocomplete="off" class="SignUpMainForm">
+        <select id="Campuses" class="SignUpForm">
+            <option value="">Please select a campus!</option>
+            {{#each get_campuses}}
+                <option value="{{name}}">{{name}}</option>
+            {{/each}}
+        </select>
+        <br>
+
+        <input type="username" id="username" class = "SignUpForm" placeholder="Username">
+        <div class="error">
+        {{#if get_username_not_valid}}
+            Username must contain only alphanumeric characters!
+        {{else}}
+            {{#if get_username_small}}
+                Username must have at least 6 characters
+            {{else}}
+                {{#if get_username_too_big}}
+                    Username must have less than 20 characters!
+                {{else}}
+                    {{#if is_not_campus_selected}}
+                        Please select a university!
+                    {{else}}
+                        {{#if is_username_taken}}
+                            Username is taken!
+                        {{/if}}
+                    {{/if}}
+                {{/if}}
+            {{/if}}
+        {{/if}}
+        </div>
+
+        <br>
+
+        <input type="password" id="password" class = "SignUpForm" placeholder="Password"/>
+
+        <br>
+
+        <input type="password" id="confirm_password" class = "SignUpForm" placeholder="Password"/>
+        <div class="error">
+
+        {{#if get_password_confirm}}
+            Passwords does not match!
+        {{/if}}
+
+        </div>
+
+        <br>
+
+        <input type="email" id="email" class = "SignUpForm" placeholder="Email"/>
+        <div class="error">
+        {{#if email_taken}}
+            Email already taken!
+        {{/if}}
+        </div>
+
+        <br>
+
+        <div class="error" style="margin-left: 10%;">
+            {{#if get_null_username}}
+                <br>
+                Username can't be empty
+            {{/if}}
+        </div>
+        <div class="error">
+            {{#if get_password_small}}
+                <br>
+                Password must be at least 6 characters long
+            {{/if}}
+        </div>
+        <br>
+        <input type="submit" id="SignUpSubmitButton" value="Sign Up"/>
+    </form>
+</template>

@@ -4,14 +4,22 @@
 if (Meteor.isClient) {
     Template.UserNavbar.helpers({
         get_user: function () {
-            return Meteor.userId();
+            if (!Meteor.userId())
+                return false;
+            return Meteor.user().username;
         }
     });
 
     Template.UserNavbar.events({
         'click #Login': function (){
-            console.log ("works!");
+            Session.set ('login_error', false);
             Session.set('show_login_side', true);
+        },
+        'click #SignUp': function () {
+            window.location.href='SignUp';
+        },
+        'click #SignOut': function () {
+            Meteor.logout();
         }
     });
 }
