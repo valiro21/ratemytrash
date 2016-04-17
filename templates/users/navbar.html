@@ -1,4 +1,4 @@
-<template name="Navbar">
+<template name="Navbar" id="header">
     <div id="MainNavbar">
         {{> SiteNavbar}}
         {{> UserNavbar}}
@@ -16,11 +16,15 @@
 <template name="UserNavbar">
     <ul id="UserButtonsNavbar">
         {{#if get_user}}
-            <li class="navbar_item" name="UserButton" id="User"><p>{{get_user}}</p></li>
-            <li class="navbar_item" name="SignOutButton" id="SignOut"><p>Sign Out</p></li>
+            <li class="navbar_item" name="UserButton" id="User">
+                <p>{{get_user}}</p></li>
+            <li class="navbar_item" name="SignOutButton" id="SignOut">
+                <p>Sign Out</p></li>
         {{else}}
-            <li class="navbar_item" name="LoginButton" id="Login"><p>Login</p></li>
-            <li class="navbar_item" name="SignUpButton" id="SignUp"><p>Sign Up</p></li>
+            <li class="navbar_item" name="LoginButton" id="Login">
+                <p>Login</p></li>
+            <li class="navbar_item" name="SignUpButton" id="SignUp">
+                <p>Sign Up</p></li>
         {{/if}}
     </ul>
 </template>

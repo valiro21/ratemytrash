@@ -39,3 +39,18 @@
 .navbar_item:hover p {
     color: khaki;
 }
+
+@media screen and (max-width:680px) {
+    #SiteButtonsNavbar
+    {
+        text-align: left;
+        background-color: limegreen;
+        width: 100%;
+    }
+    #UserButtonsNavbar
+    {
+        text-align: center;
+        background-color: limegreen;
+        width: 100%;
+    }
+}
